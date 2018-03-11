@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Room: Overwatch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--    css links for bootstrap and the html page-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <!--    css for google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
+
+  <!--javascript links for jquery, popper, bootstrap and socket.io-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+
+  <script src="/socket.io/socket.io.js "></script>
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+
+    <div class="container">
+
+      <a href="index.html">&#x21a9; Back to chat room selection</a>
+      <img src="images/Overwatch.png" class="float-right" width="224px" height="121px">
+      <h1 class="display-4">Overwatch</h1>
+      <p class="lead">Welcome to the Overwatch chat room</p>
+      <p>You are currently logged in as:<span id="username"></span></p>
+    </div>
+    <!--Container within Jumbotron ends here-->
+
+  </div>
+  <!--Jumbotron ends here-->
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-lg-4 mx-auto no-padding">
+
+        <ul id="messages"></ul>
+
+      </div>
+      <!--No-padding ends here-->
+
+    </div>
+    <!--Row ends here-->
+
+    <div class="row">
+
+      <div class="col-lg-4 mx-auto no-padding">
+
+        <form action="">
+
+          <div class="input-group col-lg-4 no-padding">
+
+            <input id="m" autocomplete="off" type="text" class="form-control" placeholder="Message..." aria-label="Message...">
+            <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="submit">Send</button>
+                        </span>
+
+          </div>
+          <!--Input-group ends here-->
+
+        </form>
+
+      </div>
+      <!--No-padding ends here-->
+
+    </div>
+    <!--Row ends here-->
+
+  </div>
+  <!--Container-fluid ends here-->
+
+  <script>
+    //declares the room as a constant so the javascript file can use it
+    const room = 'Overwatch';
+    //gives the message box focus
+    $('#m').focus();
+  </script>
+  <!--    loads the javascript file-->
+  <script src="javascript/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+.jumbotron {
+    color: antiquewhite;
+    font-family: 'Slabo 27px', serif;
+    background-color: #340622;
+}
+
+body {
+    background-color: #590337;
+}
+
+.list {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #590337;
+}
+
+.links {
+    background-color: #FAE3F1;
+    color: #000;
+}
+
+form {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#m {
+    padding: 0px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#messages li {
+    padding: 5px 10px;
+    list-style-type: none;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+#messages li:nth-child(odd) {
+    background-color: #FAE3F1;
+}
+
+#messages li:nth-child(even) {
+    background-color: #EDBEDB;
+}
