@@ -1,5 +1,5 @@
-#Computer networks CA3
-##Node.js server chatroom
+# Computer networks CA3
+## Node.js server chatroom
 
 This is a chatroom that has 3 rooms. In reality there could be as many rooms as you want. The server will assign a user name that is guest followed by a number. Each time a user joins the number is increased. The user can type in a message which will be sent to the server and displayed on any other instances of that particular chatroom that is open. Every even message bubble is one color and every odd one is a different color. This could be customised so that the users message is one color and everyone else's is a different color. Users get notified when another user enters or leaves the room.
 
