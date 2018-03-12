@@ -46,12 +46,10 @@ GAMES.on('connection', (socket) => {
   });
   //emits the message that was sent to the javscript file
   socket.on('message', (data) => {
-    console.log(`message: ${data.msg}`);
     GAMES.in(data.room).emit('message', `${user}: ${data.msg}`);
   });
   //sends a user disconnect message to the console.
   socket.on('disconnect', (data) => {
-    console.log('user disconnected');
     //emits a user disconnected message to the javascript file
     GAMES.emit('message', `${user} left the room`);
   });
